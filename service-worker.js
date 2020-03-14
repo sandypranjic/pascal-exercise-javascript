@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/pascal-exercise-notypescript/precache-manifest.f5574e9c31184ab8857afe4299fd5f63.js"
+  "/pascal-exercise-notypescript/precache-manifest.5c6e96ed558575cb517a3b8bd51f5e53.js"
 );
 
 self.addEventListener('message', (event) => {
