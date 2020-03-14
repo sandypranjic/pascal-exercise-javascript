@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/pascal-exercise-notypescript/static/css/main.631bce6a.chunk.css",
+    "main.js": "/pascal-exercise-notypescript/static/js/main.f861c705.chunk.js",
+    "main.js.map": "/pascal-exercise-notypescript/static/js/main.f861c705.chunk.js.map",
+    "runtime-main.js": "/pascal-exercise-notypescript/static/js/runtime-main.38d09ee1.js",
+    "runtime-main.js.map": "/pascal-exercise-notypescript/static/js/runtime-main.38d09ee1.js.map",
+    "static/js/2.a175d1e8.chunk.js": "/pascal-exercise-notypescript/static/js/2.a175d1e8.chunk.js",
+    "static/js/2.a175d1e8.chunk.js.map": "/pascal-exercise-notypescript/static/js/2.a175d1e8.chunk.js.map",
+    "index.html": "/pascal-exercise-notypescript/index.html",
+    "precache-manifest.f5574e9c31184ab8857afe4299fd5f63.js": "/pascal-exercise-notypescript/precache-manifest.f5574e9c31184ab8857afe4299fd5f63.js",
+    "service-worker.js": "/pascal-exercise-notypescript/service-worker.js",
+    "static/css/main.631bce6a.chunk.css.map": "/pascal-exercise-notypescript/static/css/main.631bce6a.chunk.css.map",
+    "static/js/2.a175d1e8.chunk.js.LICENSE.txt": "/pascal-exercise-notypescript/static/js/2.a175d1e8.chunk.js.LICENSE.txt",
+    "static/media/download.svg": "/pascal-exercise-notypescript/static/media/download.a325445f.svg",
+    "static/media/logo.svg": "/pascal-exercise-notypescript/static/media/logo.2bca4ba4.svg",
+    "static/media/map.png": "/pascal-exercise-notypescript/static/media/map.7278bbb7.png",
+    "static/media/mapMarker.svg": "/pascal-exercise-notypescript/static/media/mapMarker.2b7c48a7.svg",
+    "static/media/App.scss": "/pascal-exercise-notypescript/static/media/selectArrow.65df5b49.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38d09ee1.js",
+    "static/js/2.a175d1e8.chunk.js",
+    "static/css/main.631bce6a.chunk.css",
+    "static/js/main.f861c705.chunk.js"
+  ]
+}
