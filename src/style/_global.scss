@@ -1,0 +1,114 @@
+html {
+    font-size: 62.5%;
+}
+
+body, div, section, h1, h2, h3, h4, a {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    @include main;
+    color: $dark;
+    font-size: 1.4rem;
+}
+
+.wrapper {
+    width: 65%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: $dark;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+form {
+    .selectContainer {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: $neutral;
+            width: 380px;
+            height: 50px;
+            left: 10px;
+            top: 10px;
+            opacity: 0.7;
+            border-radius: 4px;
+            z-index: -1;
+        }
+    }
+    
+    select {
+        width: 100%;
+        z-index: 200;
+        background-image: url('../assets/selectArrow.svg');
+        background-position: calc(100% - 18px) 50%;
+        background-repeat: no-repeat;
+        background-size: 14px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        &::-ms-expand {
+            display: none;
+        }
+    }
+    
+    input, select {
+        font-size: 1.4rem;
+        border: 0;
+        border-radius: 4px;
+        padding: 16px 20px;
+    }
+    button {
+        color: $white;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 246px;
+        height: 50px;
+        background-color: $main;
+        border-radius: 25px;
+        border: 0;
+    }
+}
+
+.page-enter {
+    opacity: 0;
+}
+
+.page-enter-done {
+    opacity: 1;
+    transition: opacity 1s;
+    transition-delay: 0.5s;
+}
+
+.page-exit {
+    opacity: 1;
+}
+
+.page-exit-active {
+    opacity: 0;
+    transition: opacity 800ms;
+}
+
+.page-appear {
+    opacity: 0.01;
+}
+
+.page-appear-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}

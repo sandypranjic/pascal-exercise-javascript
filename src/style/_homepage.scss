@@ -1,0 +1,39 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $dark;
+    color: $white;
+    img {
+        margin-bottom: 14px;
+    }
+    h1 {
+        font-size: 3.6rem;
+        font-weight: 400;
+        margin-bottom: 51px;
+        span {
+            font-weight: 700;
+            font-size: 3.6rem;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        input {
+            margin-bottom: 35px;
+        }
+        a {
+            display: inline-block;
+            width: auto;
+        }
+        button {
+            display: block;
+            margin: 75px auto 0 auto;
+        }
+    }
+}

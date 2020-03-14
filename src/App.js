@@ -1,25 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Route } from "react-router-dom";
+import { CSSTransition } from "react-transition-group";
+import { useStore } from "./store";
+
+// Components
+import Homepage from './components/Homepage.js';
+import Gallery from './components/Gallery.js';
+
+const routes = [
+  {path: "/", name: "homepage", Component: Homepage},
+  {path: "/gallery", name: "gallery", Component: Gallery},
+];
 
 function App() {
+  const {state, dispatch} = useStore();
+
+  console.log("hello");
+  console.log(routes);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+
+        {routes.map(({ path, name, Component }) => {
+            return <Route key={name} exact path={path}>
+  
+              {({match}) => (
+                <CSSTransition
+                in={match != null}
+                timeout={1200}
+                classNames="page"
+                unmountOnExit>
+                  <div className="page">
+                    <Component />
+                  </div>
+                </CSSTransition>
+              )}
+            </Route>
+        })}
+
+    </React.Fragment>
   );
 }
 

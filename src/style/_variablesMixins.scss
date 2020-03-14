@@ -1,0 +1,16 @@
+// Colours
+$dark: #050417;
+$white: #ffffff;
+$neutral: #D5D7E5;
+$main: #2A2B8D;
+$accent: #7FD6F2;
+$error: #FF4A4A;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+// Logo
+@mixin main {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
